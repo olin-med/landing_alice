@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import WhatsAppButton from "./WhatsappButton";
 import PhoneButton from "./PhoneButton";
 import ClientButton from "./ClientButton";
+import logo_alice from "../assets/logo_alice.png"; // Adjust the import path as necessary
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Navbar: React.FC = () => {
     <nav className="bg-gray-200 p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <img src="/logo_alice.png" alt="Logo" className="w-24" />
+        <img src={logo_alice} alt="Logo" className="w-24" />
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-x-6">

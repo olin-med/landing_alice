@@ -8,6 +8,9 @@ import VerticalCard from "./components/VerticalCard"
 import MobileWhatsAppFloating from "./components/MobileWhatsAppFloating"
 import Footer from "./components/Footer"
 
+import running from "./assets/running.png"
+import health from "./assets/health.png"
+
 const PRODUCT_CARDS = [
   {
     title: "Linha Pro",
@@ -142,7 +145,7 @@ function App() {
         "
       >
         <img
-          src="/health.png"
+          src={health}
           alt="consulta"
           className="h-56 sm:h-64 lg:h-80 mx-auto lg:mx-0 rounded"
         />
@@ -237,7 +240,7 @@ function App() {
             {/* Full‑height image */}
             <div className="w-full lg:w-1/2 h-auto lg:h-full flex justify-center">
               <img
-                src="/running.png"
+                src={running}
                 alt="Detalhes dos produtos"
                 className="h-full w-auto object-cover shadow-lg rounded"
               />
